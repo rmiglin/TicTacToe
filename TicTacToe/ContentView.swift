@@ -11,18 +11,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
-            Spacer()
+            //Spacer()
             HStack{
                 Text("Your turn:")
                 Text("❌⭕️")
-            }.padding(.bottom, 20)
+            }.padding(.top, 30)
+            Spacer()
             HStack{
-                Spacer()
+                EmptyView()
+                    //.padding(.horizontal, 20.0)
+                    .frame(width: 350.0, height: 350.0)
+                    //.imageScale(Image("Board"))
+                    //.background(Image("Board"), alignment: .center)
+                //let image1: UIImage = UIImage("Background")
+                //let image1 = UIImage("Board")
                 //Image("Background").Scale.medium
                 //Rectangle().fill()
                 Spacer()
-            }
-            .padding(.bottom, 200)
+                }.background(Image("Board"))
+            .padding(.bottom, 20)
             //let image1 = Image("Background").Scale.medium
             
             
