@@ -27,13 +27,30 @@ struct ContentView: View {
             }.padding(.top, 30)
             Spacer()
             HStack{
-                Rectangle()
+                EmptyView()
                     .frame(width: 350.0, height: 350.0)
                 Spacer()
                 }.background(Image("Board"))
             .padding(.bottom, 20)
             
             Spacer()
+            //Score row
+            HStack{
+                Spacer()
+                Button(action: {
+                    print("Start Over")
+                }) {
+                    Text("Start Over")
+                }
+                Spacer()
+                Text("Score ❌:0 ⭕️:0")
+                Spacer()
+                Button(action: {}){
+                    Text("Info")
+                }
+                Spacer()
+            }.padding(.bottom, 20)
+ 
         }//.navigationBarTitle("Tic-Tac-Toe")
     }
 }
