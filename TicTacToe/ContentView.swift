@@ -45,13 +45,13 @@ struct ContentView: View {
                 Spacer()
                 Text("Score ❌:0 ⭕️:0")
                 Spacer()
-                Button(action: {}){
+                NavigationLink(destination: AboutView()){
                     Text("Info")
                 }
                 Spacer()
-            }.padding(.bottom, 20)
+            }.padding(.bottom, 30)
  
-        }//.navigationBarTitle("Tic-Tac-Toe")
+        }.navigationBarTitle("Tic-Tac-Toe")
     }
 }
 
